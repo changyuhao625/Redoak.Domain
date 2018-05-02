@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Redoak.Domain\**" />
+    <EmbeddedResource Remove="Redoak.Domain\**" />
+    <None Remove="Redoak.Domain\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Redoak.Core\Redoak.Core.csproj" />
+    <ProjectReference Include="..\Redoak.Dal\Redoak.Dal.csproj" />
+    <ProjectReference Include="..\Redoak.Domain.Model\Redoak.Domain.Model.csproj" />
+  </ItemGroup>
+
+</Project>
