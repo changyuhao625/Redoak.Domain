@@ -11,9 +11,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="KendoGridBinderEx" Version="9.9.9" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Redoak.Core\Redoak.Core.csproj" />
     <ProjectReference Include="..\Redoak.Dal\Redoak.Dal.csproj" />
     <ProjectReference Include="..\Redoak.Domain.Model\Redoak.Domain.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>System</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>System.Data</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>System.Xml</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
