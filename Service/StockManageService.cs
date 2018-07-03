@@ -47,10 +47,12 @@ namespace Redoak.Domain.Service
                 var goods = await Context.Goods.SingleAsync(x => x.Id == model.Id);
                 goods.Name = model.Name;
                 goods.UpdateDate = DateTime.Now;
+                goods.UpdateUser = model.UpdateUser;
                 Context.Goods.Update(goods);
             }
             else
             {
+                model.CreateDate = DateTime.Now;
                 await Context.Goods.AddAsync(model);
             }
 
